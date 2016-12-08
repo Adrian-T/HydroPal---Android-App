@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.a16kongs1.myapplication.MainActivity"
+    tools:showIn="@layout/customwatermenutrue">
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:text="@string/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            android:id="@+id/checkBox2"
+            android:textSize="18sp"
+            android:onClick="genderCheckBox"/>
+
+        <RadioButton
+            android:text="@string/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox3"
+            android:textSize="18sp"
+            android:onClick="genderCheckBox"
+            tools:ignore="RelativeOverlap" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/GENDER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:id="@+id/textView2"
+        android:textSize="14sp"
+        android:textColor="#8d8d90"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/finalwaterintake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:textSize="18sp"
+        android:textColor="#2e536d"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:onClick="SwitchScreen2"
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2e536d"
+        android:id="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView17"
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_height="40dp"
+        android:background="#ffffff" />
+
+
+    <TextView
+        android:text="@string/MANUALLYSET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="380dp" />
+
+    <TextView
+        android:text="@string/WEIGHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textSize="14sp"
+        android:textColor="#8d8d90"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/gender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <RadioButton
+        android:text="@string/lessthan30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/checkBox11"
+        android:textSize="18sp"
+        android:onClick="weightCheckBox"/>
+
+    <RadioButton
+        android:text="@string/thirtysixty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox8"
+        android:textSize="18sp"
+        android:onClick="weightCheckBox"/>
+
+    <RadioButton
+        android:text="@string/sixtyninety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox9"
+        android:textSize="18sp"
+        android:onClick="weightCheckBox"/>
+
+    <RadioButton
+        android:text="@string/overninety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox10"
+        android:textSize="18sp"
+        android:onClick="weightCheckBox"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:onClick="customSetWater"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:text="@string/typewaterintake"
+        android:layout_below="@+id/textView16"
+        android:layout_alignRight="@+id/textView17"
+        android:layout_alignEnd="@+id/textView17" />
+
+
+</RelativeLayout>

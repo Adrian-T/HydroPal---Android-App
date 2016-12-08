@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.a16kongs1.myapplication.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2e536d"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_weight="1" />
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/box1"
+        android:layout_marginTop="56sp"
+        android:layout_height="56dp"
+        android:background="#efeff4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/box2"
+        android:layout_marginTop="188dp"
+        android:background="#efeff4"
+        android:layout_height="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/box3"
+        android:layout_marginTop="365dp"
+        android:background="#efeff4"
+        android:layout_height="56dp" />
+
+    <RelativeLayout
+        android:id="@+id/box4"
+        android:layout_marginTop="439dp"
+        android:background="#2e536d"
+        android:layout_height="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_width="220dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/box5"
+        android:layout_marginTop="490dp"
+        android:background="#efeff4"
+        android:layout_height="80dp" />
+
+    <include layout="@layout/customwatermenutext"
+        android:layout_height="570dp"
+        android:layout_width="match_parent"
+        android:id="@+id/Body" />
+
+</android.support.design.widget.CoordinatorLayout>
